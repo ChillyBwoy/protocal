@@ -1,0 +1,35 @@
+html,body {
+	margin: 0px;
+	padding: 0px;
+}
+
+* html .png {
+	behavior: url(pngbehavior.htc);
+}
+
+
+.cal-tabs{
+	margin: 0px;
+	padding: 10px 0 10px 0;
+}
+
+.cal-tabs li.unpressed{
+	display: inline;
+	padding: 10px;
+	margin: 0px;
+	list-style: none;
+	border: 1px solid #999;
+	background-color: #CCC;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.cal-tabs li.pressed{
+	display: inline;
+	padding: 10px;
+	margin: 0px;
+	list-style: none;
+	border: 1px solid #999;
+	background-color: #FFF;
+}
+

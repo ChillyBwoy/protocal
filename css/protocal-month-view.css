@@ -1,0 +1,145 @@
+
+#calendar .month{
+	width: 720px;
+	background-color: #FFF;
+	border: 1px solid #999;	
+}
+
+
+#calendar .month .month-grid{
+	position: relative;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	display: table;
+}
+
+#calendar .month .month-grid caption{
+	font: 150% Arial;
+	color: #3F3F3F;
+	display: table-caption;
+}
+
+#calendar .month .month-grid tr{
+	position: relative;
+	display: table-row;
+}
+
+
+
+#calendar .month .month-grid tr th{
+	text-align: center;
+	width: 14%;
+}
+
+
+#calendar .month .month-grid  tr th .daylabel{
+	color: #333;
+
+	padding: 5px;
+	font-size: 8pt;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-weight: normal;
+	text-align: center;
+}
+
+#calendar .month .month-grid  tr th .daylabel-weekend{
+	padding: 5px;
+	color: #C00;
+	font: 8pt "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	text-align: center;
+}
+
+
+
+#calendar .month .month-grid tr td{
+	display: table-cell;
+	width: 14%;
+	height: 90px;
+	padding: 0px;
+	text-align: right;
+	vertical-align: top;
+}
+
+
+#calendar .month .month-grid tr td .month-void{
+	position: relative;
+	height: 90px;	
+
+	border: 1px solid #CCC;	
+	
+	color: #CCC;
+	font-size: 9pt;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-weight: normal;	
+}
+
+#calendar .month .month-grid tr td .month-other{
+	position: relative;
+	height: 90px;	
+	
+	border: 1px solid #CCC;	
+	
+	color: #666;
+	font-size: 9pt;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-weight: normal;
+	background-color: #F6F6F6;
+	
+	cursor: pointer;	
+}
+
+#calendar .month .month-grid tr td .month-day{
+	position: relative;
+	height: 90px;	
+	
+	border: 1px solid #CCC;	
+	
+	color: #666;
+	font-size: 9pt;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+#calendar .month .month-grid tr td .month-today{
+	position: relative;
+	height: 90px;
+	
+	background-color: #E7EDF6;
+	border: 1px solid #7CA0C2;	
+	
+	color: #333;
+	font-size: 9pt;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#calendar .month .month-grid tr td .daynum-marked{
+	position: relative;
+	height: 90px;	
+	
+	border: 1px solid #CCC;	
+	
+	color: #FFF;
+	font-size: 9pt;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+#calendar .month .month-grid tr td .daynum-marked-today{
+	position: relative;
+	height: 90px;
+	
+	background-color: #E7EDF6;
+	border: 1px solid #7CA0C2;	
+	
+	color: #FFF;
+	font-size: 9pt;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}

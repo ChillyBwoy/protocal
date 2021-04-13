@@ -1,0 +1,107 @@
+#calendar .week{
+	width: 720px;
+	background-color: #FFF;
+	border: 1px solid #999;	
+}
+
+#calendar .week .week-grid{
+	width: 100%;    
+	padding: 0px;
+	margin: 0px;
+}
+
+#calendar .week .week-grid caption{
+	font: 150% Arial;
+	color: #3F3F3F;
+	display: table-caption;
+}
+
+#calendar .week .week-grid tr td{
+	text-align: center;
+	width: 12.5%;
+	padding: 0px;
+	margin: 0px;
+}
+
+#calendar .week .week-grid tr td ul{
+	float: left;
+	background-color: #FFF;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#calendar .week .week-grid tr td ul.week-today{
+	border: 1px solid #7CA0C2;
+	background-color: #EEF5FF;
+}
+
+#calendar .week .week-grid tr td ul li{
+	list-style: none;
+	margin: 2px 1px 0 0;
+	width: 81px;
+}
+
+#calendar .week .week-grid tr td ul li .daylabel{
+    height: 20px;
+	color: #333;    
+    font: 8pt "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+
+#calendar .week .week-grid tr td ul li .daylabel-weekend{
+    height: 20px;
+	color: #C00;
+    font: 8pt "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;	
+}
+
+#calendar .week .week-grid tr td ul li .daylabel-today{
+    height: 20px;
+	color: #333;    
+    font: 8pt "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	background-color: #E7EDF6;
+}
+
+#calendar .week .week-grid tr td ul li .timelabel{
+    height: 20px;
+
+	color: #CCC;
+	font: 8pt "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;	
+}	
+
+#calendar .week .week-grid tr td ul li .time{
+    height: 20px;
+    padding: 0 3px 0 0;
+
+    border: 1px solid #CCC;    
+	background-color: #DDD;
+
+    color: #666;	
+    text-align: right;
+    vertical-align: middle;
+	font: 8pt "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+
+
+#calendar .week .week-grid tr td ul li .week-hour{
+    height: 20px;
+    font: 8pt "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+    border: 1px solid #CCC;
+	cursor: pointer;
+}
+
+#calendar .week .week-grid tr td ul li .week-now{
+    height: 20px;
+    
+    font: 8pt "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	background-color: #CADCF8;        
+    border: 1px solid #8AA9F7;
+	cursor: pointer;
+}
+
+#calendar .week .week-grid tr td ul li .week-other{
+    height: 20px;
+    
+    border: 1px solid #CCC;
+	background-color: #F6F6F6;    
+	cursor: pointer;
+}

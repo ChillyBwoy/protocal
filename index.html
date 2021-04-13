@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="css/protocal.css" rel="stylesheet" type="text/css" />
+<link href="css/protocal-week-view.css" rel="stylesheet" type="text/css" />
+<link href="css/protocal-month-view.css" rel="stylesheet" type="text/css" />
+<link href="css/protocal-input.css" rel="stylesheet" type="text/css" />
+
+<script language="javascript" type="text/javascript" src="js/lib/prototype.js"></script>
+<script language="javascript" type="text/javascript" src="js/lib/scriptaculous.js"></script>
+
+<script language="javascript" type="text/javascript" src="js/protocal-class.js"></script>
+<script language="javascript" type="text/javascript" src="js/protocal-nav.js"></script>
+<script language="javascript" type="text/javascript" src="js/protocal-month.js"></script>
+<script language="javascript" type="text/javascript" src="js/protocal-week.js"></script>
+
+<title>Calendar</title>
+
+<style type="text/css" media="screen">
+	body{
+		background-color: #E0E0E0;
+		text-align: center;
+	}
+	
+	#footer{
+		vertical-align: top;
+		height: 100px;
+	}
+	
+	h1{
+		font: 150% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+		color: #FFF;
+	}
+</style>
+
+</head>
+<body>
+	<div align="center">
+		<h1 id="calendar_demo">"<em>proto</em>Cal" calendar Demo <small>(version 0.2)</small></h1>
+		
+		<div id="calendar">
+			
+		</div>		
+	</div>
+	
+	<div id="footer"></div>
+	<div id="nfo"></div>
+			
+	<script type="text/javascript">
+	
+			var cal = new protoCal({
+				type: 'month',
+
+				minDate: {year: 2008, month: 8, day: 15},
+				maxDate: {year: 2008, month: 12, day: 15},			
+				
+				buttonPrevClick: function(){
+
+				},
+							
+				markers:{								
+						holidays: {						
+							values: [						
+								{year: 2008, month: 10, day: 19, value: 11, label: 'one'},
+								{year: 2008, month: 10, day: 20, value: 22, label: 'two'},
+								{year: 2008, month: 10, day: 21, value: 33, label: 'three'}
+							],
+							background: '#00A700', 
+							monthClick: function(item){
+								alert(this.getValue());
+							},
+							weekClick: function(item){
+								alert(this.getValue());
+							}							
+						},
+					
+						weekends: {
+							values: [
+								{year: 2008, month: 10, day: 16, value: 44, label: 'weekend 1'},
+								{year: 2008, month: 10, day: 17, value: 55, label: 'weekend 2'},
+								{year: 2008, month: 10, day: 18, value: 66, label: 'weekend 3'}
+							],
+							background: '#FF7300',
+							monthClick: function(){
+								alert(this.getValue());
+							},
+							weekClick: function(){
+								alert(this.getValue());
+							},
+						},
+						
+						foo: {
+							values: [
+								{year: 2008, month: 10, day: 13, hour: 19, value: 77, label: 'foo 1'},
+								{year: 2008, month: 10, day: 14, hour: 7, value: 88, label: 'foo 2'},
+								{year: 2008, month: 10, day: 15, hour: 11, value: 99, label: 'foo 3'}
+							],
+							background: '#927428',
+							
+							monthClick: function(){
+								alert(this.getValue());
+							},
+							
+							weekClick: function(){
+								alert(this.getValue());
+							},
+						},										
+				},
+				
+				templates: {				
+					week:{
+						values:[
+							{dayNum: 1, hour: 3},
+							{dayNum: 1, hour: 4},
+							{dayNum: 1, hour: 5},
+							{dayNum: 1, hour: 7},
+							{dayNum: 1, hour: 15},
+							{dayNum: 2, hour: 11},
+							{dayNum: 2, hour: 12},
+							{dayNum: 2, hour: 13},
+							{dayNum: 2, hour: 14},
+							{dayNum: 3, hour: 18},
+							
+							{dayNum: 4, hour: 11},
+							{dayNum: 4, hour: 12},
+							{dayNum: 4, hour: 13},
+							{dayNum: 4, hour: 14},
+							{dayNum: 5, hour: 18}																																																																																																																	
+						],
+						background: '#4977A2',
+						click: function(){
+							alert('i am template!')
+						}
+					},
+					month: {
+									
+					}
+				},				
+			});
+			
+			cal.dispatch();	
+	</script>
+</body>
+</html>
